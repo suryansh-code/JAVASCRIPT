@@ -1,2 +1,1 @@
-# JAVASCRIPT
-# JAVASCRIPT
+# JAVASCRIPT Basic to advance
