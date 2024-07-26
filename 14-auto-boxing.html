@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            function-of-obj
+        </title>
+
+    </head>
+    <body>
+        
+        <script>
+            console.log('hello'.length);
+            console.log('hello'.toUpperCase());
+
+            const object1 = {
+              message: 'hello'
+            };
+
+            const object2 = object1; // do not asign the actual object2 to object1 , assign the reference of it.
+            const {message} = object1.message; // if the name of variable and the object is same we can use {}.
+
+            // easy way to copy the object values to the variable
+            const object3 = 
+            {
+              message1: 'bye',
+              age: 20,
+              price: 20000
+            };
+
+            const {message1,age,price} = object3;
+            console.log(message1);
+            console.log(age);
+            console.log(price);
+
+
+
+        </script>
+    </body>
+
+</html>
+
+

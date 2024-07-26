@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            objects 2.0
+        </title>
+
+    </head>
+    <body>
+        <script>
+              // using the parametrized function 
+              const product1 = {
+                name: 'shirt',
+                'delivery-time': '1 day',
+                rating:{
+                  stars: 4.5,
+                  count: 87,
+                  fun: function fun1()
+                  {
+                    console.log('function of the project 1');
+                  }
+                },
+              };
+
+              const product2 = {
+                name: 'pant',
+                'delivery-time': '2 day',
+                rating:{
+                  stars: 5.5,
+                  count: 90,
+                  fun: function fun2()
+                  {
+                    console.log('function of project 2');
+                  }
+                },
+              };
+
+
+              console.log(product1);
+              console.log(product2.name);
+              console.log(product2['name']);
+              console.log(product1.rating.stars);
+              console.log(product2.rating.count);
+
+              product1.rating.fun();
+              product2.rating.fun();
+
+        </script>
+    </body>
+
+</html>
+
+
