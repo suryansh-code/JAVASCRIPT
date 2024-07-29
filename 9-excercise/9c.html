@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>
+          DOM
+      </title>
+
+  </head>
+  <body>
+
+      <input class="input_name" onkeyup="print_fun()">
+      <p class="para"></p>
+      
+      <script>
+        function print_fun()
+        {
+          const name = document.querySelector('.input_name').value;
+          document.querySelector('.para').innerHTML = name ;
+        }
+      </script>
+    </body>
+
+  </html>
+
+
