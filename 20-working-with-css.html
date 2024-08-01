@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS added
+        </title>
+
+        <style>
+          .bu1 {
+            border: 0cap;
+            background-color: black;
+            border-radius: 50px;
+            color: aliceblue;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            cursor:pointer;
+          }
+
+          .bu11 {
+            background-color: antiquewhite;
+            color: black;
+          }
+
+          .inputCost
+          {
+            font-size: 15px;
+            padding: 10px;
+          }
+
+          .bu2
+          {
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: 0cap;
+          }
+
+        </style>
+
+    </head>
+    <body>
+        <p>
+            You Tube Subscribe Button
+        </p>
+
+        <button onclick="subscribe()" class="bu1">Subscribe</button>
+        <p> Amazon Shipping Calculator</p>
+        <input placeholder="Cost of order" class = 'inputCost' onkeydown="handleEvent()">
+        <button onclick="calculateTotal()" class="bu2">Calculate</button>
+        <p class="totalCost"></p>
+
+        
+        <script>
+
+            function handleEvent()
+            {
+                if(event.key == 'Enter')
+              {
+                    calculateTotal();
+              }
+            }
+
+
+             function calculateTotal()
+             {
+                const input_Element = document.querySelector('.inputCost');
+                let cost = Number(input_Element.value);
+
+                if (cost<40)
+                {
+                    cost = cost + 10;
+                }
+                document.querySelector('.totalCost').innerHTML = `$${cost}` ;
+
+             }
+
+             function subscribe()
+             {
+                const buttonElement = document.querySelector('.bu1');
+                if (buttonElement.innerText === 'Subscribe')
+                {
+                    buttonElement.innerHTML = 'Subscribed';
+                    buttonElement.classList.add('bu11');
+                }
+                else
+                {
+                    buttonElement.innerHTML = 'Subscribe';
+                    buttonElement.classList.remove('bu11');
+                }
+             }
+            
+        </script>
+    </body> 
+ 
+</html>
+
+
