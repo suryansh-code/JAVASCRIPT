@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>
+          DOM
+      </title>
+
+  </head>
+  <body>      
+      <script>
+        const array1 = [1,2,3,4];
+        const array2 = array1.slice(); // make a copy of array 1 , do not point to same array 1 locaion
+        array2.push(40);
+        console.log(array2);
+        console.log(array1);
+
+        const[firstValue , secondValue] = [1,2,3];
+        console.log(firstValue);
+        console.log(secondValue);
+
+        for(let i=1 ; i<=10 ;i++)
+          {
+            if(i==3)
+              {
+                continue;
+              }
+            console.log(i);
+            if(i === 8)
+            {
+              break;
+            }
+
+          }
+        
+      // using i value
+      let i =0;
+          while(i<=10)
+          {
+            if(i%3===0)
+            {
+             i++;
+             continue;
+            }
+          
+            console.log(i);
+            i++;
+          }
+      </script>
+    </body>
+
+  </html>
+
+
