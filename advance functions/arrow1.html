@@ -8,11 +8,22 @@
   </head>
   <body>      
       <script>
-        const arrowFunction = () => {
-          console.log('hrllo');
+        const regularFunction = function()
+        {
+          console.log("the regular function");
+        }
+        
+
+
+        const arrowFunction = (param) => {
+          console.log(param+1);
         };
 
-        arrowFunction();
+        const oneLine = () => 2+45;
+        console.log(oneLine());
+
+
+        arrowFunction(2);
       </script>
     </body>
 
